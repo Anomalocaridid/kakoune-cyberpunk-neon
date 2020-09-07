@@ -1,63 +1,57 @@
 # Based on Roboron3042's Cyberpunk Neon colorscheme
 # https://github.com/Roboron3042/Cyberpunk-Neon/
-# port by DERPSQUID9
 
 # code
 
-face global value rgb:f57800,default
-face global type rgb:ea00d9,default+b
-face global identifier rgb:ea00d9,default
-face global string rgb:f57800,default
-face global error rgb:ff0000,rgb:000000+bu
-face global keyword rgb:ea00d9,default+b
-face global operator rgb:f57800,default
-face global attribute rgb:ea00d9,default
-face global comment rgb:133e7c,default
-face global meta rgb:f57800,default
+face global value rgb:f57800
+face global type @keyword
+face global identifier rgb:ea00d9
+face global string @value
+face global error rgb:ff0000+bu
+face global keyword +b@identifier
+face global operator @value
+face global attribute @identifier
+face global comment rgb:133e7c
+face global meta @value
 
 # text
-
-face global title rgb:ea00d9,default+u
-face global header default,default
-face global bold rgb:00ff00,default+b
-face global italic rgb:00ff00,default+i
-face global mono rgb:333333,rgb:dedede
-face global block rgb:333333,rgb:dedede
-face global link rgb:ea00d9,default+u
-face global bullet default,default
-face global list default,default
+ 
+face global title @identifier
+face global header default
+face global mono rgb:000b1e,rgb:00ff00
+face global block @mono
+face global link @title
+face global bullet default
+face global list default
 
 # kakoune UI
 
-face global Default rgb:0abdc6,rgb:000b1f
-face global PrimarySelection rgb:d7d7d5,rgb:711c91
-face global SecondarySelection rgb:0abdc6,rgb:133e7c
-face global PrimaryCursor rgb:000b1f,rgb:0abdc6+b
-face global SecondaryCursor rgb:272935,rgb:f8f8f2+b
-face global MatchingChar default,default+u
-face global Search default,default+u
-face global Whitespace rgb:133e7c,default+b
-face global BufferPadding rgb:133e7c,default
-face global LineNumbers default,default
-face global LineNumberCursor default,rgb:09254b+b
-face global MenuForeground rgb:0abdc6,rgb:711c91
-face global MenuBackground rgb:0abdc6,rgb:091833
-face global MenuInfo rgb:d7d7d5,rgb:ea00d9
+face global Default rgb:0abdc6,rgb:000b1e
+face global PrimarySelection rgba:d7d7d599,rgb:711c91
+face global SecondarySelection rgba:0abdc699,rgb:133e7c
+face global PrimaryCursor +br@Default
+face global SecondaryCursor rgb:000b1e,rgb:d7d7d5+b
+face global MatchingChar default+u
+face global Search default+u
+face global Whitespace +b@comment
+face global BufferPadding @comment
+face global LineNumbers @Default
+face global LineNumberCursor default,rgb:09254b+bd
+face global MenuForeground default,rgb:711c91
+face global MenuBackground default,rgb:091833
+face global MenuInfo @Information
 face global Information rgb:d7d7d5,rgb:ea00d9
-face global Error rgb:ff0000,default+bu
-face global StatusLine rgb:00ffff,rgb:000b1f
-face global StatusLineMode rgb:f57600,rgb:000b1f
-face global StatusLineInfo rgb:d100c3,rgb:000b1f
-face global StatusLineValue rgb:00ff00,rgb:000b1f
-face global StatusCursor rgb:000b1f,rgb:0abdc6
-face global Prompt rgb:f57600,rgb:000b1f
+face global Error @error
+face global StatusLine @Default
+face global StatusLineMode rgb:00ff00
+face global StatusLineInfo rgb:d100c3
+face global StatusLineValue @value
+face global StatusCursor +r@Default
+face global Prompt @keyword
 
 # kak-crosshairs integration
-face global crosshairs_line default,rgb:09254D+b
-face global crosshairs_column default,rgb:09254D+b
-
-# kakoune-roguelight integration
-face global RogueLightBackground rgb:000b1e,default
+face global crosshairs_line @LineNumberCursor
+face global crosshairs_column @LineNumberCursor
 
 # powerline.kak integration
 hook global ModuleLoaded powerline %{ require-module powerline_cyberpunk_neon }
