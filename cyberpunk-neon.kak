@@ -36,7 +36,7 @@ face global Search default+u
 face global Whitespace +b@comment
 face global BufferPadding @comment
 face global LineNumbers @Default
-face global LineNumberCursor default,rgb:09254b+bd
+face global LineNumberCursor rgba:0abdc64c,rgb:09254b+b
 face global MenuForeground default,rgb:711c91
 face global MenuBackground default,rgb:091833
 face global MenuInfo @Information
