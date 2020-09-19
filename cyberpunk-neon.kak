@@ -7,7 +7,7 @@ face global value rgb:f57800
 face global type @keyword
 face global identifier rgb:ea00d9
 face global string @value
-face global error rgb:ff0000+bu
+face global error rgb:ff0000+buF
 face global keyword +b@identifier
 face global operator @value
 face global attribute @identifier
@@ -36,7 +36,7 @@ face global Search default+u
 face global Whitespace +b@comment
 face global BufferPadding @comment
 face global LineNumbers @Default
-face global LineNumberCursor rgba:0abdc64c,rgb:09254b+b
+face global LineNumberCursor default,rgb:09254b+b
 face global MenuForeground default,rgb:711c91
 face global MenuBackground default,rgb:091833
 face global MenuInfo @Information
