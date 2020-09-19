@@ -4,6 +4,8 @@ Port of [Roboron3042's Cyberpunk Neon theme](https://github.com/Roboron3042/Cybe
 Supports the following plugins:
 * [powerline.kak](https://github.com/jdugan6240/powerline.kak)
 * [kak-crosshairs](https://github.com/insipx/kak-crosshairs)
+* [kakoune-roguelight](https://github.com/occivink/kakoune-roguelight)
+* [kakoune-easymotion](https://github.com/danr/kakoune-easymotion)
 
 ## Screenshot
 ![Screenshot](/screenshots/cyberpunk-neon-code.png "Example of the colorscheme in use")

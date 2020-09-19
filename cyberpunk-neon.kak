@@ -53,6 +53,14 @@ face global Prompt @keyword
 face global crosshairs_line @LineNumberCursor
 face global crosshairs_column @LineNumberCursor
 
+# kakoune-roguelight integration
+face global RogueLightBackground rgb:000b1e
+
+# kakoune-easymotion integration
+face global EasyMotionBackground rgb:d7d7d5
+face global EasyMotionForeground rgb:ea00d9
+face global EasyMotionSelected rgb:711c91
+
 # powerline.kak integration
 hook global ModuleLoaded powerline %{ require-module powerline_cyberpunk_neon }
 
