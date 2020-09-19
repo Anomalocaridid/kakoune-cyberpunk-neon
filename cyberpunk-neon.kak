@@ -7,7 +7,7 @@ face global value rgb:f57800
 face global type @keyword
 face global identifier rgb:ea00d9
 face global string @value
-face global error rgb:ff0000+buF
+face global error rgb:ff0000+bu
 face global keyword +b@identifier
 face global operator @value
 face global attribute @identifier
