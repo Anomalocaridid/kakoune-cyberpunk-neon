@@ -31,7 +31,7 @@ face global PrimarySelection rgba:d7d7d599,rgb:711c91
 face global SecondarySelection rgba:0abdc699,rgb:133e7c
 face global PrimaryCursor +br@Default
 face global SecondaryCursor rgb:000b1e,rgb:d7d7d5+b
-face global MatchingChar default+u
+face global MatchingChar rgb:000b1e,rgb:ea00d9+bF
 face global Search default+u
 face global Whitespace +b@comment
 face global BufferPadding @comment
