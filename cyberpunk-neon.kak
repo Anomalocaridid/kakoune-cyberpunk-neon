@@ -56,6 +56,10 @@ face global crosshairs_column @LineNumberCursor
 # kakoune-roguelight integration
 face global RogueLightBackground rgb:000b1e
 
+# kak-rainbow integration
+# colors:                         pink         orange        yellow       green         blue         purple     
+set-option global rainbow_colors "rgb:ff00ff" "rgb:f57600"  "rgb:ffff00" "rgb:00ff00" "rgb:0abdc7" "rgb:721c92"
+
 # kakoune-easymotion integration
 face global EasyMotionBackground rgb:d7d7d5
 face global EasyMotionForeground rgb:ea00d9

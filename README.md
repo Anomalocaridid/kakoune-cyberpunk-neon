@@ -6,6 +6,7 @@ Supports the following plugins:
 * [kak-crosshairs](https://github.com/insipx/kak-crosshairs)
 * [kakoune-roguelight](https://github.com/occivink/kakoune-roguelight)
 * [kakoune-easymotion](https://github.com/danr/kakoune-easymotion)
+* [kak-rainbow](https://github.com/Bodhizafa/kak-rainbow)
 
 ## Screenshot
 ![Screenshot](/screenshots/cyberpunk-neon-code.png "Example of the colorscheme in use")
