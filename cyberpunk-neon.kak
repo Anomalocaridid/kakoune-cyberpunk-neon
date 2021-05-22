@@ -1,69 +1,79 @@
 # Based on Roboron3042's Cyberpunk Neon colorscheme
 # https://github.com/Roboron3042/Cyberpunk-Neon/
 
-# code
+# Color palette
+declare-option -hidden str darkblue "rgb:000b1e"
+declare-option -hidden str blue "rgb:091833"
+declare-option -hidden str lightblue "rgb:133e7c"
+declare-option -hidden str cyan "rgb:0abdc6"
+declare-option -hidden str pink "rgb:ea00d9"
+declare-option -hidden str purple "rgb:711c91"
+declare-option -hidden str red "rgb:ff0000"
+declare-option -hidden str orange "rgb:f57800"
+declare-option -hidden str white "rgb:d7d7d5"
+declare-option -hidden str yellow "rgb:ffff00"
+declare-option -hidden str green "rgb:00ff00"
 
-face global value rgb:f57800
-face global type @keyword
-face global identifier rgb:ea00d9
-face global string @value
-face global error rgb:ff0000+bu
-face global keyword +b@identifier
-face global operator @value
-face global attribute @identifier
-face global comment rgb:133e7c
-face global meta @value
+declare-option -hidden str background "%opt{darkblue}"
 
-# text
- 
-face global title @identifier
-face global header default
-face global mono rgb:000b1e,rgb:00ff00
-face global block @mono
-face global link @title
-face global bullet default
-face global list default
+# For Code
+face global value "%opt{orange}"
+face global type "%opt{pink},default+b"
+face global variable "%opt{pink}"
+face global module "%opt{pink}"
+face global function "%opt{pink}"
+face global string "@value"
+face global keyword "%opt{pink}+b"
+face global operator "%opt{orange}"
+face global attribute "%opt{pink}"
+face global comment "%opt{lightblue}"
+face global documentation "@comment"
+face global meta "%opt{orange}"
+face global builtin "default+b"
 
-# kakoune UI
+# For markup
+face global title "%opt{pink}"
+face global header "default"
+face global mono "%opt{background},%opt{green}"
+face global block "%opt{background},%opt{green}"
+face global link "%opt{pink}+u"
+face global bullet "default"
+face global list "default"
 
-face global Default rgb:0abdc6,rgb:000b1e
-face global PrimarySelection rgba:d7d7d599,rgb:711c91
-face global SecondarySelection rgba:0abdc699,rgb:133e7c
-face global PrimaryCursor +br@Default
-face global SecondaryCursor rgb:000b1e,rgb:d7d7d5+b
-face global MatchingChar rgb:000b1e,rgb:ea00d9+bF
-face global Search default+u
-face global Whitespace +b@comment
-face global BufferPadding @comment
-face global LineNumbers @Default
-face global LineNumberCursor default,rgb:09254b+b
-face global MenuForeground default,rgb:711c91
-face global MenuBackground default,rgb:091833
-face global MenuInfo @Information
-face global Information rgb:d7d7d5,rgb:ea00d9
-face global Error @error
-face global StatusLine @Default
-face global StatusLineMode rgb:00ff00
-face global StatusLineInfo rgb:d100c3
-face global StatusLineValue @value
-face global StatusCursor +r@Default
-face global Prompt @keyword
+# builtin faces
+face global Default "%opt{cyan},%opt{background}"
+face global PrimarySelection "rgba:d7d7d599,%opt{purple}+fg"
+face global SecondarySelection "rgba:0abdc699,%opt{lightblue}+fg"
+face global PrimaryCursor "+br@Default"
+face global SecondaryCursor "%opt{background},%opt{white}+b"
+face global PrimaryCursorEol "%opt{pink},%opt{background}+b"
+face global SecondaryCursorEol "%opt{pink},%opt{white}+b"
+face global LineNumbers "default,default"
+face global LineNumberCursor "default,rgb:09254b+b"
+face global MenuForeground "default,%opt{purple}"
+face global MenuBackground "default,%opt{blue}"
+face global MenuInfo "@Information"
+face global Information "%opt{white},%opt{pink}"
+face global Error "%opt{red},default+u"
+face global StatusLine "@Default"
+face global StatusLineMode "%opt{green},default"
+face global StatusLineInfo "%opt{purple},default"
+face global StatusLineValue "%opt{orange},default"
+face global StatusCursor "+r@Default"
+face global Prompt "%opt{pink},default+b"
+face global MatchingChar "%opt{background},%opt{pink}+bF"
+face global Whitespace "@comment"
+face global BufferPadding "@comment"
 
 # kak-crosshairs integration
-face global crosshairs_line @LineNumberCursor
-face global crosshairs_column @LineNumberCursor
+face global crosshairs_line "@LineNumberCursor"
+face global crosshairs_column "@LineNumberCursor"
 
 # kakoune-roguelight integration
-face global RogueLightBackground rgb:000b1e
+face global RogueLightBackground "%opt{background}"
 
 # kak-rainbow integration
-# colors:                         pink         orange        yellow       green         blue         purple     
-set-option global rainbow_colors "rgb:ff00ff" "rgb:f57600"  "rgb:ffff00" "rgb:00ff00" "rgb:0abdc7" "rgb:721c92"
-
-# kakoune-easymotion integration
-face global EasyMotionBackground rgb:d7d7d5
-face global EasyMotionForeground rgb:ea00d9
-face global EasyMotionSelected rgb:711c91
+set-option global rainbow_colors "%opt{pink}" "%opt{orange}"  "%opt{yellow}" "%opt{green}" "%opt{cyan}" "%opt{purple}"
 
 # powerline.kak integration
 hook global ModuleLoaded powerline %{ require-module powerline_cyberpunk_neon }
