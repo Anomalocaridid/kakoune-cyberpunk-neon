@@ -5,7 +5,6 @@ Supports the following plugins:
 * [powerline.kak](https://github.com/jdugan6240/powerline.kak)
 * [kak-crosshairs](https://github.com/insipx/kak-crosshairs)
 * [kakoune-roguelight](https://github.com/occivink/kakoune-roguelight)
-* [kakoune-easymotion](https://github.com/danr/kakoune-easymotion)
 * [kak-rainbow](https://github.com/Bodhizafa/kak-rainbow)
 
 ## Screenshot
