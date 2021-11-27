@@ -14,7 +14,7 @@ Supports the following plugins:
 ### [Plug.kak](https://github.com/andreyorst/plug.kak)
 Put the following in your kakrc:
 
-    plug DERPSQUID9/kakoune-cyberpunk-neon theme config %{
+    plug Anomalocaridid/kakoune-cyberpunk-neon theme config %{
         colorscheme cyberpunk-neon
     }
 
