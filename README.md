@@ -7,6 +7,9 @@ Supports the following plugins:
 * [kakoune-roguelight](https://github.com/occivink/kakoune-roguelight)
 * [kak-rainbow](https://github.com/Bodhizafa/kak-rainbow)
 
+ # THIS REPO IS UNMAINTAINED
+I have started using a different editor for a while and I have had very little desire to develop or maintain this plugin ever since. I would like to thank everyone that used this and I am very glad that people other than I have enjoyed this color scheme.
+
 ## Screenshot
 ![Screenshot](/screenshots/cyberpunk-neon-code.png "Example of the colorscheme in use")
 
